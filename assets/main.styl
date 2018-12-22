@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Amiri:400,700|Vollkorn')
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto+Condensed|Montserrat');
+/**
+Helvetica e garabond
+
+San serif = modern clean and casual
+Condensed = bold strong and modern
+*/
+:root {
+    --main-color: #56B7A4; 
+    --secundary-color: #F0F1F3; 
+    
+    --blank-color: #FFFFFF
+
+    --traditional-title: 'Abril Fatface', cursive
+    --traditional-subtitle: 'Amiri', serif
+
+    --pragmatic-title: 'Julius Sans One', sans-serif;
+    --pragmatic-subtitle: 'Roboto Condensed', sans-serif;
+
+    --default-font: 'Lato', sans-serif
+}
+*
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+body 
+    font-family var(--default-font)
+    font-size 16px
+    background-color var(--secundary-color)
+    // color: #545e6f;
+    // color #353535
+    // color #17252A
+    // color #606164
+    // aqua green #56B7A4
+    // dark #141414
+
+.container
+    background-color var(--blank-color)
+    border 1px solid var(--secundary-color)
+    border-radius 5px
+
+.main
+
+
+.header 
+    background-color var(--blank-color)
+    font-family var(--pragmatic-title)
+    font-size 18px
+    &__topbar
+        height: 109px;
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1148px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 50px;
+    &__logo
+        width 200px
+        height auto
+        position absolute    
+        top: -72px;
+    &__navigation 
+        width 305px
+        margin-top: -5px;
+        ul
+            list-style-type none
+            cursor pointer
+            li:hover
+                font-weight 800
+                
+
+    &__hero-title 
+        position relative
+        font-size 62px
+        line-height 72px
+        letter-spacing -1.2px
+        // background-color 
+
+.section
+    margin 100px 0px
+    &__title 
+        font-family var(--traditional-title)
+        font-size 40px
+        line-height: 27px;
+        margin-bottom: 24px;
+    &__highlight
+        font-weight 700
+    &__img 
+        width 200px
+        height auto
+
+p
+    margin-bottom 10px
+    line-height 25px
+    &:last-child
+        margin-bottom 0px
+
+ul
+    padding-left 20px
+    margin-bottom 5px
+
+.no-padding-left
+    padding-left 0px
