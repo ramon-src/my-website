@@ -8,6 +8,9 @@ module.exports = {
         filename: "bundle.js",
         publicPath: "/dist"
     },
+    devServer: {
+        contentBase: [path.resolve(__dirname, "public"), path.resolve(__dirname, "assets")]
+    },
     module: {
         rules: [
             {
@@ -21,13 +24,13 @@ module.exports = {
                 test: /\.styl$/,
                 use: [
                     {
-                        loader: "style-loader" // creates style nodes from JS strings
+                        loader: "style-loader"
                     },
                     {
-                        loader: "css-loader" // translates CSS into CommonJS
+                        loader: "css-loader"
                     },
                     {
-                        loader: "stylus-loader" // compiles Stylus to CSS
+                        loader: "stylus-loader"
                     }
                 ]
             },
